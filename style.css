@@ -2,11 +2,57 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
-
+:root {
+  --border: 8px solid;
+}
 html,
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+h1, h2 {
+  font-weight: 900;
+}
+p {
+  font-size: 1.25rem;
+  margin-block: 16px 0;
+}
+strong {
+  color: hsl(160deg, 100%, 30%);
 }
 
-/* Add styles here! */
+.title {
+  margin-bottom: 48px;
+}
+.intro-chunk {
+  margin-block: 96px 64px;
+  margin-inline: 24px;
+  max-width: 415px;
+}
+
+
+main {
+  padding-block: 64px;
+  background-color: hsl(0, 0%, 40%);
+  border-top: var(--border) hsl(0, 0%, 60%);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-inline: auto;
+}
+.card {
+  background: white;
+  padding: 8px 24px 24px;
+  border-bottom: var(--border) hsl(0, 0%, 60%);
+}
+.indented-heading {
+  width: fit-content;
+  margin: 0;
+  margin-left: -32px;
+  padding: 16px 32px;
+  
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: var(--border) hsl(45deg, 100%, 40%);
+}
